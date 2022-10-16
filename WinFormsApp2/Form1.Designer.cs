@@ -35,6 +35,7 @@
             this.txtKetQua = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.btCong = new System.Windows.Forms.Button();
+            this.btTru = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -88,7 +89,7 @@
             // 
             // btCong
             // 
-            this.btCong.Location = new System.Drawing.Point(71, 170);
+            this.btCong.Location = new System.Drawing.Point(319, 106);
             this.btCong.Name = "btCong";
             this.btCong.Size = new System.Drawing.Size(86, 26);
             this.btCong.TabIndex = 6;
@@ -96,11 +97,22 @@
             this.btCong.UseVisualStyleBackColor = true;
             this.btCong.Click += new System.EventHandler(this.btCong_Click);
             // 
+            // btTru
+            // 
+            this.btTru.Location = new System.Drawing.Point(411, 106);
+            this.btTru.Name = "btTru";
+            this.btTru.Size = new System.Drawing.Size(86, 26);
+            this.btTru.TabIndex = 7;
+            this.btTru.Text = "-";
+            this.btTru.UseVisualStyleBackColor = true;
+            this.btTru.Click += new System.EventHandler(this.btTru_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(242, 212);
+            this.ClientSize = new System.Drawing.Size(534, 212);
+            this.Controls.Add(this.btTru);
             this.Controls.Add(this.btCong);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtKetQua);
@@ -124,5 +136,6 @@
         private TextBox txtKetQua;
         private Label label3;
         private Button btCong;
+        private Button btTru;
     }
 }
